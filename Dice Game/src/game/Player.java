@@ -3,7 +3,7 @@ package game;
 public class Player {
     private String name;
     private int score;
-    private Dice dice;
+    private Dice dice;   //example of "Composition"
 
     public Player(String name, Dice dice) {
         this.name = name;
