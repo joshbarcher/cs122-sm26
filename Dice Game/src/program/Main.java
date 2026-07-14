@@ -5,11 +5,13 @@ import game.Player;
 
 public class Main {
     public static void main(String[] args) {
-        Dice dice = new Dice(6);
-        Player josh = new Player("Josh", dice);
+        Dice dice1 = new Dice(6);
+        Player josh = new Player("Josh", dice1);
 
-        josh.getDice().roll();
+        Dice dice2 = new Dice(6);
+        Player deacon = new Player("Deacon", dice2);
 
-        System.out.println(dice.toString());
+        DiceGame game = new DiceGame(josh, deacon);
+        game.playGame();
     }
 }

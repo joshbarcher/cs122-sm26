@@ -12,7 +12,7 @@ public class Player {
     }
 
     public void changeScore(int value) {
-
+        score += value;
     }
 
     public String getName() {
