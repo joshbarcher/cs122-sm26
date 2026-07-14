@@ -1,6 +1,4 @@
 
-import java.util.Scanner;
-
 import game.measurements.Point;
 import hardware.KeyBoard;
 
@@ -13,21 +11,22 @@ public class Program {
 
         //creating an object based on the class
         KeyBoard myKeys = new KeyBoard(true, true, "Logitech", 16);
-        KeyBoard otherKeys = new KeyBoard(false, false, "built-in", 11);
+        KeyBoard otherKeys = new KeyBoard(false, false, "Generic", 11);
         KeyBoard thirdKeys = new KeyBoard();
 
         if (myKeys.isMechanical() == true) {
             System.out.println("Cool, mechanical keyboards are nice to type on!");
         }
 
-        System.out.println("The width of my keyboard is " + myKeys.getSize() + " inches");
+        myKeys.setSize(10000);
+        myKeys.setType("Acme Inc");
+
+        System.out.println("The width of my keyboard is " + myKeys.getSize() + " inches wide");
         System.out.println("What type of keyboard is this? " + myKeys.getType());
 
-        myKeys.pressKey();
+        System.out.println(myKeys.toString());
+        System.out.println(otherKeys.toString());
     }
 
-    public void otherMethod() {
-        //this variable is not in scope
-        //myKeys.isMechanical();
-    }
+    
 }
