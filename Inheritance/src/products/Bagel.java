@@ -3,7 +3,13 @@ package products;
 public class Bagel extends FoodProduct {
     private String type;
 
-    public Bagel() {
-        super("", 0.0, 0);
+    public Bagel(String type, String name, double price, int calories) {
+        super(name, price, calories);
+
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
     }
 }

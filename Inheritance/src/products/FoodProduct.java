@@ -1,5 +1,6 @@
 package products;
 
+//this class automatically inherits from Object
 public class FoodProduct {
     private String name;
     private double price;
@@ -33,5 +34,9 @@ public class FoodProduct {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String toString() {
+        return "Product: " + name + " $" + price;
     }
 }

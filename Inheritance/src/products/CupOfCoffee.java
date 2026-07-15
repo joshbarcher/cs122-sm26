@@ -5,7 +5,8 @@ public class CupOfCoffee extends FoodProduct {
     private String beans;
     private boolean hot;
 
-    public CupOfCoffee(String beans, boolean hot, String name, double price, int calories) {
+    public CupOfCoffee(String beans, boolean hot, String name, 
+                       double price, int calories) {
         super(name, price, calories); //call the parent constructor
 
         this.beans = beans;
@@ -18,5 +19,9 @@ public class CupOfCoffee extends FoodProduct {
 
     public boolean isHot() {
         return hot;
+    }
+
+    public String toString() {
+        return "Cup of coffee - " + beans + " $" + super.getPrice();
     }
 }
