@@ -12,10 +12,7 @@ public class Program {
         Muffin muffin = new Muffin("Cinnamon", "Coffee Cake Muffin", 3.00, 500);
         Bagel bagel = new Bagel("Plain", "Plain Bagel", 1.00, 300);
 
-        coffee.
-
         //coffee.setPrice(6.0);
-        muffin.buy();
 
         System.out.println(coffee.getName());
         System.out.println(coffee.getPrice());
