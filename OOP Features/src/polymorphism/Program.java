@@ -2,21 +2,39 @@ package polymorphism;
 
 public class Program {
     public static void main(String[] args) {
-        //these variables can only access members in Animal
-        Animal cat = new Cat("Ginny", true);
-        Animal dog = new Dog("ChuChu", 28);
-        Animal hamster = new Hamster("Beer", "white and brown");
+        //this technique is called upcasting
+        Animal[] animals = {
+            new Cat("Ginny", true),
+            new Dog("ChuChu", 28),
+            new Hamster("Beer", "white and brown"),
+            new PitBull("Terry", 5),
+            new Cat("Lazarus", true)
+        };
 
-        // System.out.println("Cat: " + cat.getName());
-        // System.out.println("Dog: " + dog.getName());
+        for (int i = 0; i < animals.length; i++) {
+            printAnimal(animals[i]);
+        }
+        System.out.println(); //new line
 
-        printAnimal(cat);
-        printAnimal(dog);
-        printAnimal(hamster);
+        Object[] objs = {
+            new Dog("Fluffers", 12),
+            new String("Hello"),
+            "Hello from CS 122",
+            new Spaceship(),
+            new StringBuilder()
+        };
+
+        for (int i = 0; i < objs.length; i++) {
+            print(objs[i]);
+        }
     }
 
     public static void printAnimal(Animal animal) {
         animal.makeNoise();
         System.out.println(animal.getName() + " made a noise");
+    }
+
+    public static void print(Object object) {
+        System.out.println(object.toString());
     }
 }

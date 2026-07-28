@@ -11,4 +11,12 @@ public class Dog extends Animal {
     public int getDogYears() {
         return dogYears;
     }
+
+    public void makeNoise() {
+        System.out.println("Ruff....");
+    }
+
+    public String toString() {
+        return getName() + " the dog";
+    }
 }

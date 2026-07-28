@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Animal {
+public abstract class Animal {
     private String name;
 
     public Animal(String name) {
@@ -12,6 +12,6 @@ public class Animal {
     }
 
     public void makeNoise() {
-        System.out.println("Noise....");
+        System.out.println("Noise...");
     }
 }

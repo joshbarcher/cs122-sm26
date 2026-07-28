@@ -11,4 +11,8 @@ public class Hamster extends Animal {
     public String getColor() {
         return color;
     }
+
+    public void makeNoise() {
+        System.out.println("Squeek....");
+    }
 }

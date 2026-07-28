@@ -11,4 +11,8 @@ public class Cat extends Animal {
     public boolean getClaws() {
         return claws;
     }
+
+    public void makeNoise() {
+        System.out.println("Meow....");
+    }
 }
