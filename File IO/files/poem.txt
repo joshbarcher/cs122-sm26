@@ -1,0 +1,6 @@
+At 2 a.m. I write to no one:
+fixed the thing that broke the thing.
+Tomorrow's me will read that line
+and hate me with a quiet, patient hate.
+
+The bug was never in the loop.
