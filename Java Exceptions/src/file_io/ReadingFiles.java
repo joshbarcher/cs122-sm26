@@ -14,11 +14,12 @@ public class ReadingFiles {
 
         Scanner reader = null;
         try {
-            reader = new Scanner(new FileInputStream("files/data.txt"));
+            reader = new Scanner(new FileInputStream("/files/data.txt"));
 
-            //what happens if an error occurs here!
+            //what happens if an error occurs here!m 
             String line = reader.nextLine();
             IO.println(line);
+
         } catch (FileNotFoundException ex) {
             System.out.println(ex.getMessage());
         } finally {
