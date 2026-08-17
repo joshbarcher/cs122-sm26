@@ -12,6 +12,28 @@ public class ChoresApp {
         choresStack.push("dishes");
         choresStack.push("garbage");
         choresStack.push("laundry");
+        choresStack.push("more dusting");
+        choresStack.push("walk the dog");
+        choresStack.push("pet the cat");
+
+        //complete all chores!
+        while (!choresStack.isEmpty()) {
+            String chore = choresStack.pop();
+            System.out.println("I need to do this - " + chore);
+        }
+
+        System.out.println("Still remaining chores - " + choresStack);
+        System.out.println("Chores left: " + choresStack.size());
+    }
+
+    public static void testStack() {
+        Stack<String> choresStack = new Stack<String>();
+
+        choresStack.push("dusting");
+        choresStack.push("cat litter");
+        choresStack.push("dishes");
+        choresStack.push("garbage");
+        choresStack.push("laundry");
 
         System.out.println("All chores - " + choresStack);
 
